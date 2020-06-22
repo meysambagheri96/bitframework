@@ -9,7 +9,7 @@ You can use Bit Data Access components, or you can use your own preferred way to
 2- True cancellation token support. There is a CancellationToken in every web api action you develop. If user/operator closes its browser, or if you cancel request at client side programmatically, that cancellation token gets notified. Almost all bit framework's methods accept cancellation token, and they stop their work as cancellation token gets notified.
 
 
-3- Bit Data Access components are optimized for N-Tier app development. To have a better understanding about what does this mean read this [amazing article](https://docs.bit-framework.com/docs/design-backgrounds/optimized-entity-framework-for-n-tier-apps.html).
+3- Bit Data Access components are optimized for N-Tier app development. To have a better understanding about what does this mean read this [amazing article](https://github.com/bitfoundation/bitframework/blob/master/docs/design-backgrounds/optimized-entity-framework-for-n-tier-apps.md).
 
 ### Entity Framework
 
@@ -23,7 +23,7 @@ public class Customer : IEntity
 }
 ```
 
-Then develop a DbContext class which inherits from EfDbContextBase. The reason is described [in an article we've previously mentioned](https://docs.bit-framework.com/docs/design-backgrounds/optimized-entity-framework-for-n-tier-apps.html).
+Then develop a DbContext class which inherits from EfDbContextBase. The reason is described [in an article we've previously mentioned](https://github.com/bitfoundation/bitframework/blob/master/docs/design-backgrounds/optimized-entity-framework-for-n-tier-apps.md).
 
 ```csharp
 public class MyAppDbContext : EfDbContextBase
